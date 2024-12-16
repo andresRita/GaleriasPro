@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colección Urbano</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Contenido de la página -->
+    <header>
+        <!-- <h1><a href="index.html" class="header-link">Colección Naturaleza</a></h1> -->
+        <h1>Galería Pro - Colección Urbano</a></h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galerías</a></li>
+                <li><a href="planes.html">Planes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Galería de Fotos -->
+    <section class="collection-gallery">
+        <h2>Fotografías de urbano</h2>
+        <div class="photo-grid">
+            <!-- Foto 1 -->
+            <div class="photo-item" onclick="openModal(0)">
+                <img src="img/urban.jpg" alt="Naturaleza 1">
+                <div class="photo-actions">
+                    <button class="like-button">👍 Like</button>
+                    <button class="comment-button">💬 Comentar</button>
+                    <button class="share-button">🔗 Compartir</button>
+                </div>
+            </div>
+            <!-- Foto 2 -->
+            <div class="photo-item" onclick="openModal(1)">
+                <img src="img/urban.jpg" alt="Naturaleza 2">
+                <div class="photo-actions">
+                    <button class="like-button">👍 Like</button>
+                    <button class="comment-button">💬 Comentar</button>
+                    <button class="share-button">🔗 Compartir</button>
+                </div>
+            </div>
+            <!-- Foto 3 -->
+            <div class="photo-item" onclick="openModal(2)">
+                <img src="img/urban.jpg" alt="Naturaleza 3">
+                <div class="photo-actions">
+                    <button class="like-button">👍 Like</button>
+                    <button class="comment-button">💬 Comentar</button>
+                    <button class="share-button">🔗 Compartir</button>
+                </div>
+            </div>
+
+            <!-- Foto 3 -->
+            <div class="photo-item" onclick="openModal(2)">
+                <img src="img/urban.jpg" alt="Naturaleza 3">
+                <div class="photo-actions">
+                    <button class="like-button">👍 Like</button>
+                    <button class="comment-button">💬 Comentar</button>
+                    <button class="share-button">🔗 Compartir</button>
+                </div>
+            </div>
+
+            <!-- Foto 3 -->
+            <div class="photo-item" onclick="openModal(2)">
+                <img src="img/urban.jpg" alt="Naturaleza 3">
+                <div class="photo-actions">
+                    <button class="like-button">👍 Like</button>
+                    <button class="comment-button">💬 Comentar</button>
+                    <button class="share-button">🔗 Compartir</button>
+                </div>
+            </div>
+
+            <!-- Foto 3 -->
+            <div class="photo-item" onclick="openModal(2)">
+                <img src="img/urban.jpg" alt="Naturaleza 3">
+                <div class="photo-actions">
+                    <button class="like-button">👍 Like</button>
+                    <button class="comment-button">💬 Comentar</button>
+                    <button class="share-button">🔗 Compartir</button>
+                </div>
+            </div>
+
+
+            <!-- Foto 3 -->
+            <div class="photo-item" onclick="openModal(2)">
+                <img src="img/urban.jpg" alt="Naturaleza 3">
+                <div class="photo-actions">
+                    <button class="like-button">👍 Like</button>
+                    <button class="comment-button">💬 Comentar</button>
+                    <button class="share-button">🔗 Compartir</button>
+                </div>
+            </div>
+
+            <div class="photo-item" onclick="openModal(2)">
+                <img src="img/urban.jpg" alt="Naturaleza 3">
+                <div class="photo-actions">
+                    <button class="like-button">👍 Like</button>
+                    <button class="comment-button">💬 Comentar</button>
+                    <button class="share-button">🔗 Compartir</button>
+                </div>
+            </div>
+
+            <div class="photo-item" onclick="openModal(2)">
+                <img src="img/urban.jpg" alt="Naturaleza 3">
+                <div class="photo-actions">
+                    <button class="like-button">👍 Like</button>
+                    <button class="comment-button">💬 Comentar</button>
+                    <button class="share-button">🔗 Compartir</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modal para Visualización Extendida -->
+    <div id="photoModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-actions">
+            <button class="like-button">👍 Like</button>
+            <button class="comment-button">💬 Comentar</button>
+            <button class="share-button">🔗 Compartir</button>
+        </div>
+        <div class="navigation">
+            <button onclick="previousPhoto()">⬅️</button>
+            <button onclick="nextPhoto()">➡️</button>
+        </div>
+    </div>
+
+    <!-- Footer fijo en la parte inferior -->
+    <footer class="footer">
+        <p>&copy; 2023 Galería Pro. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

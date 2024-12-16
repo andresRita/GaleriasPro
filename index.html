@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Fotográfica Profesional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <!-- Header con navegación -->
+    <header>
+        <div class="logo">
+            <h1>Galería Pro</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galerías</a></li>
+                <li><a href="planes.html">Planes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de bienvenida -->
+    <section id="home" class="hero">
+        <h2>Captura Momentos Inolvidables</h2>
+        <p>Explora nuestras galerías profesionales y encuentra inspiración visual en cada imagen.</p>
+        <a href="galeria.html" class="button">Explorar Galerías</a>
+    </section>
+
+    <!-- Sección de galerías -->
+    <section id="galeria" class="gallery">
+        <h2>Nuestras Colecciones Destacadas</h2>
+        <div class="collections">
+            <!-- Colección de Naturaleza -->
+            <div class="collection">
+                <img src="img/nature.jpg" alt="Naturaleza">
+                <h3>Naturaleza</h3>
+                <p>Descubre la belleza de la naturaleza en esta colección.</p>
+                <a href="coleccion-naturaleza.html" class="button">Ver Colección</a>
+            </div>
+            <!-- Colección de Bodas -->
+            <div class="collection">
+                <img src="img/couple.jpg" alt="Bodas">
+                <h3>Bodas</h3>
+                <p>Momentos especiales capturados en las ceremonias de boda.</p>
+                <a href="coleccion-bodas.html" class="button">Ver Colección</a>
+            </div>
+            <!-- Colección Urbana -->
+            <div class="collection">
+                <img src="img/urban.jpg" alt="Urbano">
+                <h3>Urbano</h3>
+                <p>La esencia de la vida en la ciudad en cada imagen.</p>
+                <a href="coleccion-urbano.html" class="button">Ver Colección</a>
+            </div>
+        </div>
+    </section>
+
+<!-- Sección de planes y precios en index.html -->
+<section id="planes" class="pricing">
+    <h2>Elige tu Plan</h2>
+    <div class="plans">
+        <div class="plan">
+            <h3>Básico</h3>
+            <p>Acceso a 50 fotos en baja resolución.</p>
+            <p class="price">$10 USD</p>
+            <a href="pago.html?plan=basico" class="button">Elegir</a>
+        </div>
+        <div class="plan">
+            <h3>Pro</h3>
+            <p>Acceso a 200 fotos en alta resolución.</p>
+            <p class="price">$30 USD</p>
+            <a href="pago.html?plan=pro" class="button">Elegir</a>
+        </div>
+        <div class="plan">
+            <h3>Premium</h3>
+            <p>Acceso ilimitado a fotos en alta resolución.</p>
+            <p class="price">$50 USD</p>
+            <a href="pago.html?plan=premium" class="button">Elegir</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Galería Pro. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="#">Términos de Servicio</a></li>
+            <li><a href="#">Política de Privacidad</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

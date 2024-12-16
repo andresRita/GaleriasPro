@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Pago</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Galería Pro - Pago</a></h1>
+        </div>
+        <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="galeria.html">Galerías</a></li>
+            <li><a href="planes.html">Planes</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Pago -->
+    <section class="payment-section">
+        <h2>Completa tu Compra</h2>
+        <div class="plan-summary">
+            <p>Plan Seleccionado:</p>
+            <h3 id="selected-plan">Básico</h3>
+            <p class="plan-price" id="plan-price">$10 USD</p>
+        </div>
+
+        <div class="payment-options">
+            <h3>Elige tu Método de Pago</h3>
+            <a href="https://www.paypal.com" class="payment-button paypal">Pagar con PayPal</a>
+            <a href="https://www.visa.com" class="payment-button card">Pagar con Tarjeta de Crédito</a>
+            <a href="https://www.stripe.com" class="payment-button others">Otros Métodos de Pago</a>
+        </div>
+
+        <!-- Botón de Cancelar Compra -->
+        <a href="javascript:void(0);" class="cancel-button" onclick="window.history.back()">Cancelar Compra</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 Galería Pro. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Obtener el parámetro del plan de la URL y mostrarlo en la página
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedPlan = urlParams.get('plan');
+
+        // Asignar nombre y precio según el plan seleccionado
+        let planName = 'Básico';
+        let planPrice = '$10 USD';
+
+        switch (selectedPlan) {
+            case 'pro':
+                planName = 'Pro';
+                planPrice = '$30 USD';
+                break;
+            case 'premium':
+                planName = 'Premium';
+                planPrice = '$50 USD';
+                break;
+            case 'corporate':
+                planName = 'Corporativo';
+                planPrice = '$100 USD';
+                break;
+            case 'photographer':
+                planName = 'Fotógrafo';
+                planPrice = '$70 USD';
+                break;
+        }
+
+        document.getElementById('selected-plan').textContent = planName;
+        document.getElementById('plan-price').textContent = planPrice;
+    </script>
+</body>
+
+</html>
